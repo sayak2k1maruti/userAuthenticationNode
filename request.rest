@@ -1,0 +1,41 @@
+###
+GET http://localhost:3000/users/test HTTP/1.1
+Content-Type:  application/json
+access_token : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTZiZjc5MDIxNWQ0ZDVkOGU5MTk4NTQiLCJ1c2VyTmFtZSI6InNheWFrNyIsImlhdCI6MTYzNDQ4ODQwOSwiZXhwIjoxNjM0NDg4NDI0fQ.Lnc5y8O9J4V8Jsk7vUvJTnwG5dzUCUt-tsUwzLz9kGc
+
+
+
+###
+POST http://localhost:3000/users/signUp   HTTP/1.1
+Content-Type: application/json
+
+{
+    "userName" : "sayak50000000",
+    "password" : "sayak50000000" 
+}
+
+###
+POST http://localhost:3000/users/signIn  HTTP/1.1
+Content-Type: application/json
+
+{
+    "userName" : "sayak7",
+    "password" : "sayak7" 
+}
+
+
+###
+POST  http://localhost:3000/users/getAccess HTTP/1.1
+Content-Type: application/json
+
+{
+    "refresh_token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTZiZjc5MDIxNWQ0ZDVkOGU5MTk4NTQiLCJ1c2VyTmFtZSI6InNheWFrNyIsImlhdCI6MTYzNDQ4OTk3NX0.ARAiDbZmS1AirGGfTo9CD2m848-Kp7cFw4HFMfIKDMs"
+}
+
+###
+POST  http://localhost:3000/users/signOut HTTP/1.1
+Content-Type: application/json
+
+{
+     "refresh_token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTZiZjc5MDIxNWQ0ZDVkOGU5MTk4NTQiLCJ1c2VyTmFtZSI6InNheWFrNyIsImlhdCI6MTYzNDQ4OTk3NX0.ARAiDbZmS1AirGGfTo9CD2m848-Kp7cFw4HFMfIKDMs"
+}
